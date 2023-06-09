@@ -4,24 +4,74 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/actualité.css">
+
     <title>Document</title>
 </head>
 <body>
     <header>
-        <nav></nav>
+        <nav>
+            <div class="topnav" id="myTopnav">
+                <a  href="../index.html" ><img src="../images/logo.png" alt="logo"></a>
+                <a  href="../index.html">Accueil</a>
+                <a  href="../html/actualité.html">Actu équipe</a>
+                <a  href="../html/actualité.html">L'Inter-quartier</a>
+                <a  href="../html/classement_competition.html">Classement</a>
+                <a  href="../html/calendrier.html">Calendrier</a>
+                <a  href="../html/forum.html">Forum</a>
+                <a  href="../html/contact.html">Contact</a>
+                <a  href="javascript:void(0);" class="icon" onclick="burgerMenu()">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </div>
+            <div class="search">
+                <input type="text" placeholder="recherchez">
+                <button type="submit">
+                    <i class="fa fa-search"></i>
+                </button>
+            </div>
+        </nav>
     </header>
 
+
+    <style>
+        .blocimg{
+            display: grid;
+            grid-template-columns: 60% 40%;
+        }
+
+    </style>
     <main>
-        <section>
-            <img src="" alt="image">
-            <h3>Lorem</h3>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-                Recusandae cum, unde similique eligendi expedita laboriosam blanditiis ipsam atque saepe. 
-                Maiores dignissimos cum voluptatem ea ad, 
-                consequuntur laudantium est deserunt. Quaerat.
-            </p>
+        <section class="partOne">
+
+            <h2 class="titre">Titre</h2>
+
+            <div class="mainArticle">
+                <div class="blocimg">
+                    <img src="../images/ARTICLE.jpg" alt="image">
+                    <div>
+                        <h3 class="soustitre">Lorem</h3>
+                        <div class="cta">
+                            <a href=""><button class="boutonarticle">Lire l'article</button></a>
+                        </div> 
+                    </div>
+                </div>
+                <h6 class="legende"><a href="">Catégorie ||</a>13/06/2023</h6>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                    Recusandae cum, unde similique eligendi expedita laboriosam blanditiis ipsam atque saepe. 
+                    Maiores dignissimos cum voluptatem ea ad, 
+                    consequuntur laudantium est deserunt. Quaerat.
+                </p>
+        </div>
         </section>
+
         <section>
             <div>
                 <h3>Lorem</h3>
@@ -63,6 +113,17 @@
     </main>
 
 
-    <footer></footer>
+    <footer>
+        <p>
+            Pour plus d’actualité  rejoingnez nous 
+            à travers nos reseaux sociaux
+        </p> 
+        <a href="https://www.whatsapp.com/"><i class="fa-brands fa-whatsapp fa-xl"></i></a>
+        <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook-f fa-xl"></i></a>
+        <a href="https://www.messenger.com/"><i class="fa-brands fa-facebook-messenger fa-xl"></i></a>
+    </footer>
+
+    <script src="../script/script_burger.js"></script>
+
 </body>
 </html>
