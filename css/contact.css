@@ -1,0 +1,31 @@
+.partContact{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.partInfo{
+    border: solid #5798B2 1px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 4%;
+}
+.partOne{
+    border: solid #5798B2 1px;
+    border-radius: 3%;
+    padding: 4%;
+    width: 50;
+}
+
+.partTwo{
+    border: solid #5798B2 1px;
+    border-radius: 3%;
+    padding: 3%;
+    width: 40%;
+}
+
+.partMsg{
+    display: flex;
+    flex-direction: column;
+}
