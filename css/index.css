@@ -1,6 +1,10 @@
 /* part Global */
 /*Section principale*/
-/* partie du haut apres la navbar, avec la part. evenement et le premier article */
+/* partie du haut apres la navbar, avec la partie evenement et le premier article */
+h6 a{
+    color: #2a9d8f;
+    text-transform: uppercase;
+}
 
 .partOne{
     display: flex;
@@ -39,6 +43,8 @@ hr{
 
 .bouton{
     width: 50%;
+    padding: 5% 1%;
+    margin-top: 3%;
 }
 
 
