@@ -12,44 +12,41 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" 
     integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <link rel="stylesheet" href="../css/normalize.css">
     <link rel="stylesheet" href="../css/article.css">
     <title>Article</title>
     
-    <!-- /* il reste à modifier margin bouton et padding, insérer la partie carrousel titre */ -->
-
-    <style>
-        
-        img { padding: 0 5%; border: solid 1px #5798B2 ; width :80%; border-top: none; border-bottom: none;justify-self: center;}
-        .partOne {display: grid;}
-        hr{color: #5798B2; width: 40%; justify-self: center;}
-        .charticle{ width: 80%; justify-self: center; text-align: center;}
-        .princimg{display:grid;}
-
-        .carrousel {
-            height: 450px;
-        }
-
-        .image{
-            height: 100%;
-        }
-
-        @media (max-width:738px){
-            img{width:100%; border: none;padding:0%;}
-
-            .charticle{ width: 90%;}
-
-            .carrousel{ height: 200px;}
-        }
-        
-    </style>
 </head>
 
 <body>
 
     <header>
-        <nav></nav>
-    </header>
+      <nav>
+          <div class="topnav" id="myTopnav">
+              <a  href="../index.html" ><img src="../images/logo.png" alt="logo"></a>
+              <a  href="../index.html">Accueil</a>
+              <a  href="../html/actualité.html">Actu équipe</a>
+              <a  href="../html/actualité.html">L'Inter-quartier</a>
+              <a  href="../html/classement_competition.html">Classement</a>
+              <a  href="../html/calendrier.html">Calendrier</a>
+              <a  href="../html/forum.html">Forum</a>
+              <a  href="../html/contact.html">Contact</a>
+              <a  href="javascript:void(0);" class="icon" onclick="burgerMenu()">
+                  <i class="fa fa-bars"></i>
+              </a>
+          </div>
+          <div class="search">
+              <input type="text" placeholder="recherchez">
+              <button type="submit">
+                  <i class="fa fa-search"></i>
+              </button>
+          </div>
+      </nav>
+  </header>
 
     <main>
         <!-- Partie 1 avec l'article -->
@@ -63,9 +60,9 @@
                 ex nobis excepturi non obcaecati?
             </p>
 
-            <div class="princimg">
+            <div id="blocimg">
                 <hr>
-                <img src="../images/image1.jpg" alt="image">
+                <img src="../images/image1.jpg" class="princimg" alt="image">
                 <h6 class="legende">Date</h6>
             </div>  
 
@@ -97,7 +94,7 @@
                 ex nobis excepturi non obcaecati?
             </p>
                 <div class="cta">
-                    <button class="bouton">Voir calendrier</button> 
+                    <button class="bouton">Voir toute l'actus</button> 
                 </div>             
         </section>
 
@@ -105,6 +102,7 @@
 
         <section class="partTwo">
 
+          <h2 class="chapeau">Plus de photos</h2>
             <!-- test 1 carrousel bootstrap  -->
             <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner">
@@ -128,39 +126,21 @@
                 </button>
               </div>
 
-              <!-- test 2 carrousel code pen .io  -->
-              <div class="container">
-                <div class="carousel carousel-slider center " data-indicators="true">
-                  <div class="carousel-fixed-item center middle-indicator">
-                   <div class="left">
-                    <a href="Previo" class="movePrevCarousel middle-indicator-text waves-effect waves-light content-indicator"><i class="material-icons left  middle-indicator-text">chevron_left</i></a>
-                   </div>
-                   
-                   <div class="right">
-                   <a href="Siguiente" class=" moveNextCarousel middle-indicator-text waves-effect waves-light content-indicator"><i class="material-icons right middle-indicator-text">chevron_right</i></a>
-                   </div>
-                  </div>
-                  <div class="carousel-item red white-text" >
-                    <img src="../images/image1.jpg"alt="...">
-                  </div>
-                  <div class="carousel-item amber white-text" href="#two!">
-                    <h2>Second Panel</h2>
-                    <p class="white-text">This is your second panel</p>
-                  </div>
-                  <div class="carousel-item green white-text" href="#three!">
-                    <h2>Third Panel</h2>
-                    <p class="white-text">This is your third panel</p>
-                  </div>
-                  <div class="carousel-item blue white-text" href="#four!">
-                    <h2>Fourth Panel</h2>
-                    <p class="white-text">This is your fourth panel</p>
-                  </div>
-                </div>
-              
-              </div>
         </section>
 
     </main>
+
+    <footer>
+      <p>
+          Pour plus d’actualité  rejoingnez nous 
+          à travers nos reseaux sociaux
+      </p> 
+      <a href="https://www.whatsapp.com/"><i class="fa-brands fa-whatsapp fa-xl"></i></a>
+      <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook-f fa-xl"></i></a>
+      <a href="https://www.messenger.com/"><i class="fa-brands fa-facebook-messenger fa-xl"></i></a>
+    </footer>
+
+    <script src="../script/script_burger.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js" integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS" crossorigin="anonymous"></script>
 </body>

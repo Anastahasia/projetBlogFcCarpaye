@@ -19,29 +19,40 @@
 
     <title>Forum</title>
 
-    <style>
-
-        main{padding: 0%;}
-        div p{ padding-left: 1%;}
-        .bouton{padding: 1%; margin: 0%}    
-        .plus{font-size: 220%; padding-right: 2%;}
-        .cta { text-align: end;}
-
-        .user{width:100%; text-align: center;}
-        .userPhoto{width: 55px; height: 55px; border-radius: 50%; }
-
-        #newChat{display: inline-flex; justify-content: space-between; align-items: center; border: solid #5798B2; border-width: 1px 0px; width: 100%;}
-        .chat{display: grid; grid-template-columns: 85% 15%; justify-items: center; align-items: center;border: solid 1px #5798B2; border-width: 1px 0px; width: 100%;margin-top: 2%;}
-    </style>
 </head>
 
 <body>
+
+    <header>
+        <nav>
+            <div class="topnav" id="myTopnav">
+                <a  href="../index.html" ><img src="../images/logo.png" alt="logo"></a>
+                <a  href="../index.html">Accueil</a>
+                <a  href="../html/actualité.html">Actu équipe</a>
+                <a  href="../html/actualité.html">L'Inter-quartier</a>
+                <a  href="../html/classement_competition.html">Classement</a>
+                <a  href="../html/calendrier.html">Calendrier</a>
+                <a  href="../html/forum.html">Forum</a>
+                <a  href="../html/contact.html">Contact</a>
+                <a  href="javascript:void(0);" class="icon" onclick="burgerMenu()">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </div>
+            <div class="search">
+                <input type="text" placeholder="recherchez">
+                <button type="submit">
+                    <i class="fa fa-search"></i>
+                </button>
+            </div>
+        </nav>
+    </header>
+
     <main>
         
         <section class="partOne">
 
             <div class="cta">
-                <button class="bouton"><a href="">Se connecter</a></button>
+                <a href=""><button class="bouton">Se connecter</button></a>
             </div>
 
             <h2 class="titre"> Forum </h2>
@@ -59,7 +70,6 @@
                 <div class="lastMessage">
                     <p class="textearticle">
                         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim debitis doloremque 
-                        nam distinctio modi laborum quae vitae facere saepe sed natus repellendus 
                         eligendi culpa dignissimos tenetur, corrupti architecto. Architecto, suscipit!
                     </p>
                     <p class="legende">
@@ -74,10 +84,19 @@
             </div>
 
         </section>
-
-
-
     </main>
+
+    <footer>
+        <p>
+            Pour plus d’actualité  rejoingnez nous 
+            à travers nos reseaux sociaux
+        </p> 
+        <a href="https://www.whatsapp.com/"><i class="fa-brands fa-whatsapp fa-xl"></i></a>
+        <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook-f fa-xl"></i></a>
+        <a href="https://www.messenger.com/"><i class="fa-brands fa-facebook-messenger fa-xl"></i></a>
+    </footer>
+
+    <script src="../script/script_burger.js"></script>
 </body>
 
 </html>
