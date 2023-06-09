@@ -35,8 +35,13 @@ footer p {margin: 0;}
     display: none;
 }
 
-.navA img { width: 20%; padding: 0;}
+nav img { 
+    width: 3em;
+    height: 2em;
+}
 /* fin css navbar */
+
+/* Css mise en forme générale*/
 body{
     padding-left: 10%;
     padding-right: 10%;
@@ -50,15 +55,20 @@ main{
     padding: 5% 3%;
 }
 
-nav img{
-    width: 3em;
-    height: 2em;
+img{ 
+    width: 100%;
 }
 
-nav a{
+a{
     text-decoration: none;
-    color: #2a9d8f;
-    text-transform: uppercase;
+}
+
+button a{
+    color: white;
+}
+
+.cta{
+    text-align: center;
 }
 
 .bouton{
@@ -67,9 +77,9 @@ nav a{
     border: solid 1px #5798B2;
     border-style: none;
     border-radius: 0%;
-    padding: 5% 1%;
-    margin-top: 3%;
 }
+
+
 /* font de tous les éléménts*/
 .titre{
     text-align: center;
@@ -102,9 +112,6 @@ button{
     margin: 0;
 }
 
-.cta{
-    text-align: center;
-}
 
 @media (max-width:1023px){
 /* partie de na nav */
