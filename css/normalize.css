@@ -1,4 +1,4 @@
-/* css de la nav bar */
+/* css de la nav bar + footer */
 nav { padding: 2%; background-color: #269D8F; display: flex; justify-content: space-between; align-items: center;}
 .navA {gap: 3%;}
 nav a {text-decoration: none; color: black;}
@@ -50,11 +50,12 @@ main{
     padding: 5% 3%;
 }
 
-img{
-    width: 100%;
+nav img{
+    width: 3em;
+    height: 2em;
 }
 
-a{
+nav a{
     text-decoration: none;
     color: #2a9d8f;
     text-transform: uppercase;
@@ -105,7 +106,7 @@ button{
     text-align: center;
 }
 
-@media (max-width:738px){
+@media (max-width:1023px){
 /* partie de na nav */
 
     .topnav a:not(:first-child) {display: none;}
