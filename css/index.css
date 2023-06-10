@@ -64,14 +64,8 @@ hr{
 
 /* a retrouver dans les deux sections */
 .boutonarticle{
-    color: white;
-    background-color: #364653;
-    border: solid 1px #5798B2;
-    border-style: none;
-    font-size: 16px;
     padding: 2%;
     width: 20%;
-
 }
 
 .sideArticle .cta, .mainArticle .cta{
@@ -106,10 +100,6 @@ hr{
         width: 40%;
     }
     .boutonarticle{
-        font-size: 11px;
         width: 20%;
     }
 }
-
-
-/*changer les espacements */
