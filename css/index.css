@@ -1,11 +1,6 @@
 /* part Global */
 /*Section principale*/
 /* partie du haut apres la navbar, avec la partie evenement et le premier article */
-h6 a{
-    color: #2a9d8f;
-    text-transform: uppercase;
-}
-
 .partOne{
     display: flex;
     justify-content: space-between;
@@ -63,6 +58,12 @@ hr{
 }
 
 /* a retrouver dans les deux sections */
+/* la catégorie */
+h6 a{
+    color: #2a9d8f;
+    text-transform: uppercase;
+}
+/*les boutons*/
 .boutonarticle{
     padding: 2%;
     width: 20%;
