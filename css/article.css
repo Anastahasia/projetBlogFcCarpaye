@@ -1,30 +1,40 @@
-.princimg { 
-  width: 80%; 
-  justify-self: center; 
-}
-
-.partOne {
+/* partie 1 l'article*/
+.partOne { 
   display: grid;
 }
-hr{
-  color: #5798B2;
-  width: 40%;
-  justify-self: center;
-}
+
 .charticle{ 
   width: 80%; 
   justify-self: center; 
   text-align: center;
 }
 
-#blocimg{
+.blocimg{
   display:grid; 
   padding: 3% 5% 0%; 
   border: solid 1px #5798B2 ; 
-  width :100%; border-top: none; 
+  width :100%; 
+  border-top: none; 
   border-bottom: none;
   justify-content: center; 
   margin-bottom: 4%;
+}
+
+.princimg { 
+  width: 90%; 
+  justify-self: center; 
+}
+
+.legende{
+  padding-left: 10%;
+  padding-top: 1%;
+}
+
+/* éléments de décoration */
+hr{
+  color: #5798B2;
+  width: 40%;
+  justify-self: center;
 }
 
 .bouton{
@@ -36,19 +46,21 @@ hr{
     height: 450px;
 }
 
-.legende{
-  padding-left: 10%;
-  padding-top: 1%;
-}
 
 @media (max-width:738px){
 
-    img{
-      width:100%; 
+    .blocimg{
       border: none;
-      padding:0%;
+      padding:2% 0%;
     }
 
+    .princimg{
+      width:100%; 
+    }
+
+    .legende{
+      padding: 0%;
+    }
     .charticle{ width: 90%;}
 
     .carrousel{ height: 200px;}

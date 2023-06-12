@@ -4,65 +4,256 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/actualité.css">
+
     <title>Document</title>
 </head>
 <body>
     <header>
-        <nav></nav>
+        <nav>
+            <div class="topnav" id="myTopnav">
+                <a  href="../index.html" ><img src="../images/logo.png" alt="logo"></a>
+                <a  href="../index.html">Accueil</a>
+                <a  href="../html/actualité.html">Actu équipe</a>
+                <a  href="../html/actualité.html">L'Inter-quartier</a>
+                <a  href="../html/classement_competition.html">Classement</a>
+                <a  href="../html/calendrier.html">Calendrier</a>
+                <a  href="../html/forum.html">Forum</a>
+                <a  href="../html/contact.html">Contact</a>
+                <a  href="javascript:void(0);" class="icon" onclick="burgerMenu()">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </div>
+            <div class="search">
+                <input type="text" placeholder="recherchez">
+                <button type="submit">
+                    <i class="fa fa-search"></i>
+                </button>
+            </div>
+        </nav>
     </header>
 
+
+    <style>
+        h6 a{
+    color: #2a9d8f;
+    text-transform: uppercase;
+}
+
+        .blocimg{
+            display: flex;
+            gap: 3%;
+        }
+        .princimg{width: 50%;}
+
+        .chapeau{width: 85%;} 
+        .charticle{position: relative;}
+        .mainArticle .boutonarticle{
+            padding: 1.5%;
+            width: 13%;
+        }
+        .mainArticle .cta{ text-align: right;position: absolute;top: 0;right: 0; width: 100%;}
+
+        .partThree{
+            margin-top: 5.5%;
+        }
+        .sideArticle { 
+            display: flex;
+            gap: 4%;
+            margin: 3% 0%;
+        }
+
+        .sideArticle img{
+            width: 40%;
+        }
+
+        .boutonarticle{
+            padding: 2%;
+            width: 20%;
+        }
+
+        .partTwo{    display: grid;
+    grid-template-columns: 48% 48%;
+    justify-content: space-between;
+}
+
+.partTwo .boutonarticle {
+    padding: 2%;
+    width: 22.5%;
+}
+@media (max-width:1023px){
+
+    .princimg {
+    width: 70%;
+}
+
+.mainArticle .boutonarticle {
+    padding: 2%;
+    width: 20%;
+    margin-top: 2%;
+}
+    .chapeau{width: 100%;}
+    .mainArticle .cta{ text-align: center;position:initial;}
+    .partTwo .boutonarticle {
+    padding: 4%;
+    width:41.5%;
+    margin-top: 4%;
+}
+
+.partTwo .cta{
+    text-align: left;
+}
+.sideArticle { 
+        flex-direction: column;
+        margin-top: 7%;
+    }
+    .sideArticle img{
+        width: 100%;
+    }
+
+    .boutonarticle{}
+}
+    </style>
     <main>
-        <section>
-            <img src="" alt="image">
-            <h3>Lorem</h3>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-                Recusandae cum, unde similique eligendi expedita laboriosam blanditiis ipsam atque saepe. 
-                Maiores dignissimos cum voluptatem ea ad, 
-                consequuntur laudantium est deserunt. Quaerat.
-            </p>
-        </section>
-        <section>
-            <div>
-                <h3>Lorem</h3>
-                <img src="" alt="">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-                    Recusandae cum, unde similique eligendi expedita laboriosam blanditiis ipsam atque saepe. 
-                    Maiores dignissimos cum voluptatem ea ad, 
-                    consequuntur laudantium est deserunt. Quaerat.
-                </p>
-            </div>
-            <div>
-                <h3>Lorem</h3>
-                <img src="" alt="">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-                    Recusandae cum, unde similique eligendi expedita laboriosam blanditiis ipsam atque saepe. 
-                    Maiores dignissimos cum voluptatem ea ad, 
-                    consequuntur laudantium est deserunt. Quaerat.
-                </p>
+        <section class="partOne">
+
+            <h2 class="titre">Titre</h2>
+
+            <div class="mainArticle">
+                <div class="blocimg">
+                    <img src="../images/image1.jpg" class="princimg" alt="image">
+                    <h3 class="soustitre">Lorem</h3>
+                </div>
+
+                <h6 class="legende"><a href="">Catégorie ||</a>13/06/2023</h6>
+
+                <div class="charticle">
+                    <p class="chapeau">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                        Recusandae cum, unde similique eligendi expedita laboriosam blanditiis ipsam atque saepe. 
+                        Maiores dignissimos cum voluptatem ea ad, 
+                        consequuntur laudantium est deserunt. Quaerat.
+                    </p>                        
+                    <div class="cta">
+                        <a href=""><button class="boutonarticle">Lire l'article</button></a>
+                    </div> 
+                </div>
             </div>
         </section>
-        <section>
-            <h3>Lorem</h3>
-            <img src="" alt="">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-                Recusandae cum, unde similique eligendi expedita laboriosam blanditiis ipsam atque saepe. 
-                Maiores dignissimos cum voluptatem ea ad, 
-                consequuntur laudantium est deserunt. Quaerat.
-            </p>
+
+        <section class="partTwo">
+            <div class="cardArticle">
+                <h3 class="intertitre">Lorem</h3>
+                <img src="../images/image1.jpg" alt="image">
+                <div>
+                    <p class="textearticle">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                        Velit fugit fuga minus ipsum. Unde fuga, 
+                        voluptates mollitia ab eveniet velit enim ratione, 
+                        fugiat sapiente libero, 
+                        ex nobis excepturi non obcaecati?
+                    </p>
+                    <h6 class="legende"><a href="">Catégorie ||</a>13/06/2023</h6>
+                    <div class="cta">
+                        <a href=""><button class="boutonarticle">Lire l'article</button></a>
+                    </div> 
+                </div>
+            </div>
+
+            <div class="cardArticle">
+                <h3 class="intertitre">Lorem</h3>
+                <img src="../images/image1.jpg" alt="image">
+                <div>
+                    <p class="textearticle">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                        Velit fugit fuga minus ipsum. Unde fuga, 
+                        voluptates mollitia ab eveniet velit enim ratione, 
+                        fugiat sapiente libero, 
+                        ex nobis excepturi non obcaecati?
+                    </p>
+                    <h6 class="legende"><a href="">Catégorie ||</a>13/06/2023</h6>
+                    <div class="cta">
+                        <a href=""><button class="boutonarticle">Lire l'article</button></a>
+                    </div> 
+                </div>
+            </div>
         </section>
-        <section>
-            <h3>Lorem</h3>
-            <img src="" alt="">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-                Recusandae cum, unde similique eligendi expedita laboriosam blanditiis ipsam atque saepe. 
-                Maiores dignissimos cum voluptatem ea ad, 
-                consequuntur laudantium est deserunt. Quaerat.
-            </p>
+
+        <section class="partThree">
+            <div class="sideArticle">
+                <img src="../images/image1.jpg" alt="image">
+                <div>
+                    <h3 class="intertitre">Lorem</h3>
+                    <p class="textearticle">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                        Velit fugit fuga minus ipsum. Unde fuga, 
+                        voluptates mollitia ab eveniet velit enim ratione, 
+                        fugiat sapiente libero, 
+                        ex nobis excepturi non obcaecati?
+                    </p>
+                    <h6 class="legende"><a href="">Catégorie ||</a>13/06/2023</h6>
+                    <div class="cta">
+                        <a href=""><button class="boutonarticle">Lire l'article</button></a>
+                    </div> 
+                </div>
+            </div>
+
+            <div class="sideArticle">
+                <img src="../images/image1.jpg" alt="image">
+                <div>
+                    <h3 class="intertitre">Lorem</h3>
+                    <p class="textearticle">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                        Velit fugit fuga minus ipsum. Unde fuga, 
+                        voluptates mollitia ab eveniet velit enim ratione, 
+                        fugiat sapiente libero, 
+                        ex nobis excepturi non obcaecati?
+                    </p>
+                    <h6 class="legende"><a href="">Catégorie ||</a>13/06/2023</h6>
+                    <div class="cta">
+                        <a href=""><button class="boutonarticle">Lire l'article</button></a>
+                    </div> 
+                </div>
+            </div>
+            
+            <div class="sideArticle">
+                <img src="../images/image1.jpg" alt="image">
+                <div>
+                    <h3 class="intertitre">Lorem</h3>
+                    <p class="textearticle">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                        Velit fugit fuga minus ipsum. Unde fuga, 
+                        voluptates mollitia ab eveniet velit enim ratione, 
+                        fugiat sapiente libero, 
+                        ex nobis excepturi non obcaecati?
+                    </p>
+                    <h6 class="legende"><a href="">Catégorie ||</a>13/06/2023</h6>
+                    <div class="cta">
+                        <a href=""><button class="boutonarticle">Lire l'article</button></a>
+                    </div> 
+                </div>
+            </div>
         </section>
     </main>
 
 
-    <footer></footer>
+    <footer>
+        <p>
+            Pour plus d’actualité  rejoingnez nous 
+            à travers nos reseaux sociaux
+        </p> 
+        <a href="https://www.whatsapp.com/"><i class="fa-brands fa-whatsapp fa-xl"></i></a>
+        <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook-f fa-xl"></i></a>
+        <a href="https://www.messenger.com/"><i class="fa-brands fa-facebook-messenger fa-xl"></i></a>
+    </footer>
+
+    <script src="../script/script_burger.js"></script>
+
 </body>
 </html>
