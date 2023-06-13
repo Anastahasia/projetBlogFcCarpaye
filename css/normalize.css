@@ -125,9 +125,7 @@ button{
     .topnav.responsive .icon {position: absolute;right: 0;top: 0;}
     .topnav.responsive a {float: none;display: block;text-align: left;}
 
-
-/* partie du reste */
-    
+ /* partie du reste */           
     body{
         padding: 0%;
         background-color: white;
@@ -135,9 +133,12 @@ button{
     main{
         padding: 5% 2%;
     }
+}
+/*version téléphone*/
+    @media (max-width:738px){
 
     .titre{
-        font-size: 36px;
+        font-size: 28px;
         margin-top: 2%;
     }
 

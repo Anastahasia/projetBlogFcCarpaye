@@ -1,6 +1,7 @@
 table{
     width: 100%;
     border-collapse: collapse;
+    
 }
 
 th{
@@ -17,10 +18,14 @@ thead th{
     border: solid 1px #269d8f;
 }
 
-
-
-
 .bouton{
     padding: 2%; 
     margin-top: 2%;
+}
+
+@media (max-width:1180px){
+    td, 
+    th {
+        padding-left:0%;
+    }
 }
