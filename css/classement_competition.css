@@ -1,0 +1,26 @@
+table{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th{
+    padding: 1% 0;
+}
+
+td, 
+th {
+    border-top: solid #269d8f 1px;
+    padding-left: 2%;
+}
+
+thead th{
+    border: solid 1px #269d8f;
+}
+
+
+
+
+.bouton{
+    padding: 2%; 
+    margin-top: 2%;
+}
