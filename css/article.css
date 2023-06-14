@@ -17,7 +17,7 @@
   border-top: none; 
   border-bottom: none;
   justify-content: center; 
-  margin-bottom: 4%;
+  margin-bottom: 2%;
 }
 
 .princimg { 
@@ -47,7 +47,7 @@ hr{
 }
 
 
-@media (max-width:738px){
+@media (max-width:1023px){
 
     .blocimg{
       border: none;
@@ -63,6 +63,6 @@ hr{
     }
     .charticle{ width: 90%;}
 
-    .carrousel{ height: 200px;}
+    .carrousel{ height: 250px;}
 }
 
