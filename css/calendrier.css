@@ -2,15 +2,14 @@
     width: 50%;
 }
 .partPrincipal{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    text-align: center;
 }
 .partCalendrier{
-    width: 70%;
+    width: 50%;
 }
 .partTwo{
     display: flex;
+    flex-direction: row-reverse;
     justify-content: space-between;
 }
 .partOne{
@@ -18,22 +17,30 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-start;
+    gap: 2%;
 }
 .partEvent{
     border: solid #5798B2 1px;
-    padding: 4%;
+    padding: 3%;
+    margin-bottom: 2%;
+
 }
 iframe{
-    width:100%;
-    height:400;
+    width:70%;
 }
 h3{ text-justify: center;}
+.partSecondaire{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 /*  pas encore fini */
 
 @media (max-width:1023px){
     .partOne{
         flex-direction: column;
         align-items: center;
+        /* margin-top: 2%; */
     }
     iframe{
         width:100;
