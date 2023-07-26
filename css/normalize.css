@@ -625,7 +625,7 @@ thead th{
       .carrousel{ height: 250px;}
   }
   
-  /*style de la page article*/
+  /*style de la page actu*/
 /* section partOne */
 .princArticle .blocimg{
     display: flex;
@@ -664,6 +664,11 @@ thead th{
 .deuxArticles .boutonarticle {
     padding: 2%;
     width: 22.5%;
+}
+
+#actu .boutonarticle {
+    padding: 2%;
+    width: 20%;
 }
 
 @media (max-width:1023px){
